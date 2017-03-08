@@ -1,0 +1,93 @@
+html, body {
+    background: url('../img/background.jpg') center center no-repeat;
+    height: 100%;
+    background-size: cover;
+}
+#logo img {
+    padding-top: 20px;
+    max-width: 80%;
+    max-height: 50%;
+}
+#intro p {
+    color: white;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 3em;
+}
+
+#counter .countdown {
+    color: white;
+    font-family: 'Amatica SC', cursive;    
+    font-size: 3em;
+    margin-top: -15px;
+}
+
+#icons .fa {
+    color: white;
+    margin: 5px 15px;
+    position: relative;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+}
+#icons .fa:hover {
+    bottom: 5px;
+}
+
+#icons .facebook:hover {
+    color: #3b5998;
+}
+#icons .google:hover {
+    color: #ea4335;
+}
+#icons .instagram:hover {
+    color: #517fa6;
+}
+#icons .linkedin:hover {
+    color: #007bb6
+}
+#icons .twitter:hover {
+    color: #6cadde;
+}
+#icons .youtube:hover {
+    color: #ea4335;
+}
+
+#signup .btn {
+    color: white;
+    background-color: rgba(161, 186, 226, 0.5);
+    transition: all 0.1s linear;
+}
+
+#signup .btn:hover {
+    background-color: rgba(37, 165, 82, 1);
+}
+
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+    #intro p {
+        font-size: 1.6em;        
+    }
+    #counter .countdown {
+        font-size: 1.6em;
+        margin-top: -15px;
+    }
+    #icons .fa {
+        margin: 5px auto;
+        font-size: 2em;
+    }
+    /*#icons .fa:hover {
+        font-size: 4em;
+    }*/
+}
+
+@media (orientation:landscape) {
+    #logo img {
+        padding-top: 10px;
+        max-width: 80%;
+        max-height: 30vh;
+    }
+}

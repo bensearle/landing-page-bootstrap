@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Landing Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome and Google Font -->
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Amatica+SC:400,700" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section id="logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img class="img-fluid" src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>We're working hard, we'll be ready in...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="countdown"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-3x facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="http://www.google.com" target="blank"><i class="fa google fa-google-plus-square fa-3x google" aria-hidden="true"></a></i></li>
+                        <li class="list-inline-item"><a href="http://www.instagram.com" target="blank"><i class="fa instagram fa-instagram fa-3x instagram" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-3x linkedin" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-3x twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-square fa-3x youtube" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <form class="form-inline" role="form" method="POST" action="signup">
+                        <input type="email" class="form-control form-control-sm" name="email" placeholder="enter your email">
+                        <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">find out more</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script>
+        $(function() {
+            $('.countdown').countdown({
+                date: "June 7, 2017 15:03:26"
+            });
+        });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
